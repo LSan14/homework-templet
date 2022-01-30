@@ -1,0 +1,114 @@
+:root {
+  ---primary-color: #f5f4e8;
+  ---seconday-color: #000000;
+  ---accent-color: radial-gradient(
+    circle at 10% 20%,
+    rgb(87, 108, 117) 0%,
+    rgb(37, 50, 55) 100.2%
+  );
+  --gradient: linear-gradient(
+    67.7deg,
+    rgb(252, 185, 125) -0.9%,
+    rgb(245, 231, 106) 22.8%,
+    rgb(160, 236, 208) 50.3%,
+    rgb(57, 178, 209) 75.5%,
+    rgb(183, 174, 193) 100.2%
+  );
+  --box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
+}
+
+body {
+  font-family: "Righteous", cursive;
+  background: var(--gradient);
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+.greeting {
+  font-size: 55px;
+  padding: 10px;
+  margin-top: 60px;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.detail {
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.buttons {
+  flex: 1;
+  padding: 10px;
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.first {
+  background: blueviolet;
+  padding: 15px;
+  color: var(---primary-color);
+  margin-right: 20px;
+  border-radius: 10%;
+  box-shadow: var(--box-shadow);
+  border-color: blueviolet;
+}
+.first:hover {
+  background: transparent;
+}
+
+.second {
+  background: var(---primary-color);
+  padding: 15px;
+  color: blueviolet;
+  margin-left: 20px;
+  border-radius: 10%;
+  box-shadow: var(--box-shadow);
+  border-color: blueviolet;
+}
+
+.second:hover {
+  background: transparent;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 17px;
+  margin: 50px;
+}
+.column-1 {
+  background: lightgrey;
+  padding: 10px;
+  margin: 10px;
+}
+
+.column-2 {
+  background: lightgrey;
+  padding: 10px;
+  margin: 10px;
+}
+.about {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.contact {
+  font-size: 40px;
+  font-weight: bold;
+}
